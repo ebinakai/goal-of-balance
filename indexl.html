@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EbinaKai">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Goal of Balance</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <!-- for wavify.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer></script>
+    <script src="js/wavify.js" defer></script>
+    <script src="js/jquery.wavify.js" defer></script>
+
+    <!-- 自作コード -->
+    <link rel="stylesheet" href="css/balance.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Goal of Balance</h1>
+        </header>
+
+        <main>
+            <div class="panel">
+                <div class="goal-pot">
+                    <h2><span class="balance">0</span><span class="base"></span></h2>
+                    <h3 class="remain">残り <span></span>円</h3>
+                </div>
+                
+                <form class="control-panel">
+                    <input type="number" min="0" placeholder="How much deposit?">
+                    <div class="submit-container">
+                        <button class="btn submit" type="submit">SAVING</button>
+                    </div>
+                </form>
+                
+                <div class="history">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Value</th>
+                                <!-- <th>Click Twice</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr><td colspan="2">double click to delete item</td></tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rate">
+                <p>40%</p>
+            </div>
+        </main>
+        
+        <svg class="level" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path id="wave" d=""/>
+        </svg>
+
+        <footer>
+            <p>© Ebina Kai (click twice here to reset)</p>
+        </footer>
+    </div>
+</body>
+</html>

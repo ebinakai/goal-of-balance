@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* 
+    #0D0D0D
+    #394A59
+    #8EA8BF
+    #D9BFA9
+    #B0C1D9
+*/
+
+* {
+    color: #525d50;
+}
+
+header {
+    height: 80px;
+}
+
+header h1 {
+    line-height: 80px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+main {
+    overflow: hidden;
+    min-height: calc(100vh - 140px);
+}
+
+body {
+    background: #d9dad3;
+    height: 100vh;
+}
+
+.panel {
+    background: #eee;
+    border-radius: 20px;
+    width: 800px;
+    margin: 100px auto 200px auto;
+    padding-top: 40px;
+    max-height: 80%;
+    overflow-y: scroll;
+    box-shadow: 4px 6px 13px 0px rgba(0, 0, 0, 0.4);
+    
+    -ms-overflow-style: none;
+}
+
+.panel::-webkit-scrollbar{
+    display: none;
+}
+
+.goal-pot h2 {
+    font-size: 130px;
+    text-align: center;
+}
+
+.goal-pot h2 span.base {
+    font-size: 50px;
+    color: #7fab7f;
+}
+
+.goal-pot h3 {
+    color: #394A59;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.control-panel {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.control-panel input {
+    font-size: 30px;
+    padding: 20px;
+    height: 50px;
+    width: 480px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.control-panel .btn {
+    background-color: #7fab7f;
+    color: white;
+    font-weight: bold;
+    width: 110px;
+    height: 50px;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.control-panel .btn:hover {
+    background-color: #648664;
+}
+
+.control-panel .submit-container {
+    display: inline;
+}
+
+.history {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.history tbody td {
+    cursor: pointer;
+}
+
+.history tbody th:hover{
+    color: #bd4949;
+}
+
+.history td:first-child {
+    padding: 1rem 0.75rem;
+}
+
+.item-clear {
+    width: 180px;
+    cursor: pointer;
+}
+
+.item-clear:hover {
+    color: #bd4949;
+    transition: .2s;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.rate {
+    position: fixed;
+    bottom: 200px;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+}
+
+.rate p {
+    color: #d9dad3;
+    font-weight: bold;
+    font-size: 240px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: none;
+    text-align: center;
+}
+
+footer p {
+    color: #161a17;
+    line-height: 60px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: #303531;
+}
+
+svg.level {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: none;
+    z-index: -2;
+    height: 100px;
+    display: block;
+}
+
+@media screen and (max-width: 850px) {
+    .panel {
+        width: 95%;
+        margin: 10px auto 200px auto;
+    }
+
+    .goal-pot h2 {
+        font-size: 90px;
+    }
+
+    span.base {
+        display: block;
+        padding-left: 10%;
+        margin-bottom: 40px;
+    }
+
+    .control-panel {
+        margin-top: 30px;
+    }
+
+    .control-panel .submit-container {
+        display: block;
+        padding: 20px;
+    }
+
+    .control-panel input {
+        width: 90%;
+        height: 50px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .control-panel .btn {
+        width: 80%;
+        height: 50px;
+    }
+
+    .history {
+        margin-top: 20px;
+    }
+
+    .rate {
+        margin: 20px 0;
+        bottom: 80px;
+    }
+
+    .rate p {
+        color: #d9dad3;
+        font-weight: bold;
+        font-size: 140px;
+    }
+}
